@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-google-play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M43.7887534,5.74943401 C19.6605842,-7.67120429 0.100838415,3.83683859 0.100838415,31.4432139 L0.100838415,377.898159 C0.100838415,405.50908 19.6607671,417.012475 43.7887534,403.591938 L357.729553,228.970902 C381.857722,215.550263 381.857539,193.791008 357.729553,180.370471 L43.7887534,5.74943401 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-google-play">
+            <g id="Group" transform="translate(70.000000, 52.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Path" fill="#828282" xlink:href="#path-1"></use>
+                <polygon id="Path-2" fill-opacity="0.47766644" fill="#E8E8E8" mask="url(#mask-2)" points="-8.02025534 429.765625 329.341864 104.191406 -9.18349848 -34.5039062"></polygon>
+                <polygon id="Path-3" fill-opacity="0.449133832" fill="#D8D8D8" mask="url(#mask-2)" points="-27.9070313 -28.4257812 325.47399 292.746094 426.395236 195.929688 2.89910442 -36.46875"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
