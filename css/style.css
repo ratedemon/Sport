@@ -11,6 +11,7 @@
 	padding-top: 7%;
 	height: 100vh;
 	width: 100vw;
+	display: none;
 }
 
 .header__description{
@@ -158,28 +159,33 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	position: relative;
 }
 .about__img_pic{
-	width: 60%;
+	/*width: 60%;*/
 	display: block;
 	margin: 0 auto;
 	position: relative;
 	z-index: 10;
+	height: 80vh;
 }
 .about__img_line{
 	width: 70%;
-	height: 3px;
-	background: #5e42b0;
+	display: block;
+	margin: 10% auto;
+	/*background: #5e42b0;*/
 	position: absolute;
-	transform: rotate(-45deg);
-	top: 40%;
-	bottom: 50%;
-	left: 15%;
-	right: 50%;
+	/*transform: rotate(-45deg);*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	z-index: 5;
 }
 .about__img_plus{
 	position: absolute;
 	top: 10%;
 	left: 20%;
+	right: 0;
+	bottom: 0;
+	width: 10%;
 }
 .about__img_background{
 	position: absolute;
@@ -275,6 +281,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	background-size: cover;
 	padding: 25% 0;
 	position: relative;
+	/*display: none;*/
 }
 .footer__text_title{
 	color: white;
@@ -326,7 +333,9 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	height: 100%;
 	}
 }
-
+.header, .footer, .be-active{
+	display: none!important;
+}
 
 @font-face{
 	font-family: proximaBold;
