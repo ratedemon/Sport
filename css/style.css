@@ -5,18 +5,19 @@
 	font-size: 100%;
 }
 .header{
-	background: url(../img/header.jpg) no-repeat;
-	background-position: center;
+	background: url(../img/header_new.jpg) no-repeat;
+	background-color: #3d2b70;
+	background-position: top;
+	background-attachment: fixed;
 	background-size: cover;
-	padding-top: 7%;
+	/*padding-top: 7%;*/
 	height: 100vh;
-	width: 100vw;
-	display: none;
+	width: 100%;
 }
 
 .header__description{
 	position: relative;
-	padding: 10% 20% 2%;
+	padding: 5% 12% 1%;
 	font-family: proximaBold;
 }
 .description__tagline{
@@ -28,23 +29,22 @@
 	text-transform: uppercase;
 	white-space: nowrap;
 }
+.header__logo{
+	margin: 3% 0 1.5%;
+}
+.logo__pic{
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+}
 .description__tagline_add{
 	text-align: right;
 }
 .description__line{
-	width: 50%;
-	height: 5px;
-	background: #5e42b0;
-	position: absolute;
-	top: 40%;
-	bottom: 0;
 	right: 0;
-	left: 25%;
-	z-index: 5;
-	transform: rotate(-45deg);
 }
 .header__download{
-	margin-top: 10%;
+	margin-top: 4%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,6 +88,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 .header__nav{
 	margin: 4% 0;
 	display: flex;
+	/*display: none;*/
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -167,17 +168,20 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	height: 80vh;
 }
 .about__img_line{
-	width: 70%;
+	/*width: 60%;*/
+	max-height: 70%;
 	display: block;
-	margin: 10% auto;
+	margin: 0;
 	/*background: #5e42b0;*/
 	position: absolute;
 	/*transform: rotate(-45deg);*/
 	top: 0;
-	bottom: 0;
 	left: 0;
-	right: 0;
+	bottom: 0;
 	z-index: 5;
+}
+.about__img_line{
+	margin: 3% auto;
 }
 .about__img_plus{
 	position: absolute;
@@ -315,25 +319,25 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 48em) and (orientation: landscape) {
  	.header{
  		height: 100%;
  	}
  	.nav__item{
  		margin: 1% 10%;
  	}
- 	.description__line{
+/* 	.description__line{
 	width: 30%;
 	top: 50%;
 	bottom: 0;
 	right: 0;
 	left: 35%;
-	}
+	}*/
 	.footer{
 	height: 100%;
 	}
 }
-.header, .footer, .be-active{
+.footer, .be-active{
 	display: none!important;
 }
 
