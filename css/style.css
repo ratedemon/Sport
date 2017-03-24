@@ -521,36 +521,42 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
     justify-content: center;
     align-items: center;
 	}
-	.athlets__slider{
+	.athlets__slider, .players__slider{
 		display: flex;
 		width: 100%;
 		justify-content: flex-start;
 		align-items: stretch;
 		position: relative;
+		overflow: visible;
 	}
-	.title__athlet{
+	.players__slider{
+		flex-direction: row-reverse;
+		overflow: hidden;
+	}
+	.title__athlet, .title__players{
 		text-align: right;
+		font-size: 4.2em;
+    padding-right: 12%;
+	}
+	.title__players{
+		padding-right: 0;
+		text-align: left;
+		padding-left: 12%;
 	}
 	.about__img{
 		/*width: 30%;*/
 		flex: 1;
-		transform: translateX(-30%);
+		transform: translate(-30%, -5%);
 		z-index: 20;
 		position: relative;
 	}
-/*	.about__img:hover{
-		transform: translateX(0%);
-	}*/
-
 	.about__img_pic{
 		width: 60%;
-		
-		/*height: 100vh;*/
 	}
 	.about__img_background{
 		display: none;
 	}
-	.athlets__article{
+	.athlets__article, .players__article{
 		/*width: 70%;*/
 		/*flex: 2;*/
 		/*position: relative;*/
@@ -565,18 +571,45 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 		bottom: 0;
 		right: 0;
 		z-index: 5;
-
+		width: 100%;
+    overflow: hidden;
+	}
+	.players__article{
+		width: 100%;
+		overflow: visible;
+	}
+	.players__slider .about__img{
+		/*position: relative;*/
+		transform: translate(38%, 0);
+	}
+	.player__img_pic{
+		height: 90%;
+		width: auto;
 	}
 	.athlets__article > *{
 		flex: 1;
 		padding-left: 47.5%;
 		padding-right: 2.5%;
 	}
+	.players__article > *{
+		flex: 1;
+		/*padding-left: 2.5%;
+		padding-right: 47.5%;*/
+	}
 	.article__about:first-child, .article__about:first-child .about__name, .article__about:first-child .about__paragraph{
+		background: white;
+	}
+	.players__about:first-child, .players__about:first-child .about__name, .players__about:first-child .about__paragraph{
 		background: white;
 	}
 	.article__about:last-child, .article__about:last-child .about__name, .article__about:last-child .about__paragraph{
 		background: #5e42b0;
+	}
+	.players__about:last-child, .players__about:last-child .about__name, .players__about:last-child .about__paragraph{
+		background: #090c35;
+	}
+	.players__about:last-child .name__time{
+		color: #5e42b0;
 	}
 	.article__about:last-child .about__paragraph{
 		color: white;
@@ -584,15 +617,40 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	.article__about:last-child .name__time{
 		border-bottom: 5px solid #efefef;
 	}
+	.players__about:last-child .about__paragraph{
+		color: white;
+	}
+	.players__about:last-child .name__time{
+		border-bottom: 5px solid white;
+	}
 /*	.article__about{
 		position: absolute;
 		width: 100vw;	
 	}*/
 	.about__name, .about__paragraph{
-		width: 100%;
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
 	}
 	.about__paragraph{
 		width: 50%;
+		line-height: 1.5;
+	}
+	.text__date {
+		padding: 4%;
+		margin-top: -15%;
+	}
+	.text__h2{
+		font-size: 3.5em;
+	}
+	.post__image{
+		height: 500px;
+	}
+	.be-active__text_line{
+		width: 1.5em;
+	}
+	.footer__social {
+		padding: 1.5% 0;
 	}
 }
 

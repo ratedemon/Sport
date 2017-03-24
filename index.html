@@ -7,26 +7,33 @@
 	<meta name="theme-color" content="#5e42b0">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/animations-ie-fix.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script> -->
+	<script type="text/javascript" src="script/jquery.min.js" defer></script>
+	<script src="http://hammerjs.github.io/dist/hammer.min.js" defer></script>
+	<script type="text/javascript" src="script/css3-animate-it.js" defer></script>
+	<script src="script/script.js" defer></script>
+
 </head>
 <body>
 <div class="container-fluid">
 	<header class="header row">
-		<div class="header__logo col-xs-12 center-xs col-sm-12 col-md-12">
+		<div class="header__logo col-xs-12 center-xs col-sm-12 col-sm-12 col-md-12">
 			<a href="#" class="logo__link_header"><img src="img/logo.svg" alt="" class="logo__pic"></a>
 			<span class="logo__description">for athlets and coaches</span>
 		</div>
-		<div class="header__description col-xs-12 col-md-12">
+		<div class="header__description col-xs-12 col-sm-12 col-md-12">
 			<h1 class="description__tagline">BE RECRUITED</h1>
 			<h1 class="description__tagline description__tagline_add">PLAY COLLEGE<br>
 SPORTS</h1>
 		</div>
-		<div class="header__download col-xs-12 center-xs col-md-12">
+		<div class="header__download col-xs-12 center-xs col-sm-12 center-sm col-md-12 center-md">
 			<button class="download__apple"><img src="img/apple.svg" alt="" class="apple__pic"><span class="apple__text">download on the APP STORE</span></button>
 			<button class="download__google-play"><img src="img/google-play.svg" alt="" class="google__pic"><span class="google-play__text">get it on<br>GOOGLE PLAY</span></button>
 		</div>
-		<div class="header__nav col-xs-12 col-md-12">
+		<div class="header__nav col-xs-12 col-sm-12 col-md-12">
 			<a href="#" class="nav__item">football</a>
 			<a href="#" class="nav__item">basketball</a>
 			<a href="#" class="nav__item">baseball</a>
@@ -36,10 +43,10 @@ SPORTS</h1>
 	</header>
 	
 	<div class="athlets row">
-		<div class="athlets__title col-xs-12 col-md-12">
+		<div class="athlets__title col-xs-12 col-sm-12 col-md-12">
 			<h2 class="title__athlet">Athlets</h2>
 		</div>
-		<div class="athlets__slider col-xs-12 col-md-12">
+		<div class="athlets__slider col-xs-12 col-sm-12 col-md-12">
 		<div class="about__img">
 					<object data="img/athlets.svg" type="image/svg+xml" class="about__img_pic">Your brouser doesn't support SVGs</object>
 					<div class="about__img_line"></div>
@@ -76,10 +83,10 @@ SPORTS</h1>
 	</div>
 
 	<div class="players row">
-		<div class="players__title col-xs-12">
+		<div class="players__title col-xs-12 col-sm-12 col-md-12">
 			<h2 class="title__players">Players</h2>
 		</div>
-		<div class="players__slider col-xs-12">
+		<div class="players__slider col-xs-12 col-sm-12 col-md-12">
 		<div class="about__img">
 					<object data="img/player.svg" type="image/svg+xml" class="about__img_pic player__img_pic">Your brouser doesn't support SVGs</object>
 					<div class="about__img_line"></div>
@@ -116,7 +123,7 @@ SPORTS</h1>
 	</div>
 
 	<div class="be-active row">
-		<div class="be-active__post col-xs-12">
+		<div class="be-active__post col-xs-12 col-sm-12 col-md-12">
 			<div class="post__image">
 				<img src="img/play.jpg" alt="" class="post__image_pic">
 			</div>
@@ -128,7 +135,7 @@ SPORTS</h1>
 			</div>	
 		</div>
 
-		<div class="be-active__post col-xs-12">
+		<div class="be-active__post col-xs-12 col-sm-12 col-md-12">
 			<div class="post__image">
 				<img src="img/play.jpg" alt="" class="post__image_pic">
 			</div>
@@ -140,7 +147,7 @@ SPORTS</h1>
 			</div>	
 		</div>
 
-		<div class="be-active__post col-xs-12">
+		<div class="be-active__post col-xs-12 col-sm-12 col-md-12">
 			<div class="post__image">
 				<img src="img/play.jpg" alt="" class="post__image_pic">
 			</div>
@@ -153,20 +160,17 @@ SPORTS</h1>
 		</div>
 	</div>
 
-	<footer class="footer row">
-		<!-- <div class="footer__logo col-xs-12 center-xs"> -->
-			<a href="#" class="logo__link col-xs-12 center-xs"><img src="img/footer_logo.svg" alt="" class="logo__link_pic"></a>
-		<!-- </div> -->
-		<div class="footer__text col-xs-12 center-xs">
+	<footer class="footer">
+			<a href="#" class="logo__link col-xs-12 center-xs col-sm-12 center-sm col-md-12 center-md"><img src="img/footer_logo.svg" alt="" class="logo__link_pic"></a>
+		<div class="footer__text col-xs-12 center-xs col-md-12 center-md">
 			<h3 class="footer__text_title">download app</h3>
 			<p class="footer__text_description">Show everyone what yu can do!</p>
-			<!-- <object data="img/line.svg" type="image/svg+xml" class="about__img_line footer__line"></object> -->
 		</div>
-		<div class="footer__download header__download col-xs-12 center-xs">
+		<div class="footer__download header__download col-xs-12 center-xs col-sm-12 center-sm col-md-12 center-md">
 			<button class="download__apple"><img src="img/apple.svg" alt="" class="apple__pic"><span class="apple__text">download on the APP STORE</span></button>
 			<button class="download__google-play"><img src="img/google-play.svg" alt="" class="google__pic"><span class="google-play__text">get it on<br>GOOGLE PLAY</span></button>
 		</div>
-		<div class="footer__social col-xs-12 center-xs">
+		<div class="footer__social col-xs-12 center-xs col-sm-12 center-sm col-md-12 center-md">
 			<a href="#" class="social__link"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
 			<a href="#" class="social__link"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
 			<a href="#" class="social__link"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
@@ -174,7 +178,7 @@ SPORTS</h1>
 	</footer>
 
 </div>
-<!-- <script src="script/script.js"></script> -->
-<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+
+
 </body>
 </html>
