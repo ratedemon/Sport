@@ -148,11 +148,11 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	width: 100%;
 }
 .athlets__article, .players__article{
-	display: flex!important;
-	flex-direction: row!important;
-	justify-content: flex-start!important;
-	align-items: flex-start!important;
-	flex-wrap: nowrap!important;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
 	transform: translateX(0%);
 	transition: all .2s ease;
 }
@@ -322,7 +322,9 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 .footer{
 	width: 100%;
-	background: url(../img/footer.jpg);
+	/*background: url(../img/footer.jpg);*/
+	background: #382151 url(../img/Football-stadium.jpg) no-repeat;
+	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -461,35 +463,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	}
 }
 
-/*@media screen and (max-width: 48em) and (orientation: landscape) {
- 	.header{
- 		height: 100%;
- 	}
- 	.logo__description{
-		display: none;
-	}
-	.logo__pic {
-    width: 60%;
-	}
-	.download__apple, .download__google-play{
-		justify-content: center;
-		width: 45%;
-		margin: 2.5% 0;
-	}
- 	.nav__item{
- 		margin: 1% 10%;
- 	}
-	.footer{
-		height: 100%;
-	}
-	.footer > *{
-		width: 100%;
-		margin: 3% 0;
-	}
-	.footer > *:last-child{
-		margin: 3% 0 0;
-	}
-}*/
+
 @media screen and (min-width: 48em){
 	.header{
 		height: auto;
@@ -524,6 +498,13 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	.description__line{
 		max-height: 85%;
 	}
+	.athlets__page, .players__page{
+		display: none;
+	}
+	.article__about, .players__about{
+		padding: 0 0 5%;
+		background: #f5f4f9;
+	}
 	.header__description{
 		padding: 5% 20% 1%;	
 		background-origin: content-box;
@@ -540,11 +521,79 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
     justify-content: center;
     align-items: center;
 	}
-/*	.description__tagline_add{
-		text-align: left;
-	  white-space: normal;
-	  align-self: flex-end;
+	.athlets__slider{
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
+		align-items: stretch;
+		position: relative;
+	}
+	.title__athlet{
+		text-align: right;
+	}
+	.about__img{
+		/*width: 30%;*/
+		flex: 1;
+		transform: translateX(-30%);
+		z-index: 20;
+		position: relative;
+	}
+/*	.about__img:hover{
+		transform: translateX(0%);
 	}*/
+
+	.about__img_pic{
+		width: 60%;
+		
+		/*height: 100vh;*/
+	}
+	.about__img_background{
+		display: none;
+	}
+	.athlets__article{
+		/*width: 70%;*/
+		/*flex: 2;*/
+		/*position: relative;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 5;
+
+	}
+	.athlets__article > *{
+		flex: 1;
+		padding-left: 47.5%;
+		padding-right: 2.5%;
+	}
+	.article__about:first-child, .article__about:first-child .about__name, .article__about:first-child .about__paragraph{
+		background: white;
+	}
+	.article__about:last-child, .article__about:last-child .about__name, .article__about:last-child .about__paragraph{
+		background: #5e42b0;
+	}
+	.article__about:last-child .about__paragraph{
+		color: white;
+	}
+	.article__about:last-child .name__time{
+		border-bottom: 5px solid #efefef;
+	}
+/*	.article__about{
+		position: absolute;
+		width: 100vw;	
+	}*/
+	.about__name, .about__paragraph{
+		width: 100%;
+	}
+	.about__paragraph{
+		width: 50%;
+	}
 }
 
 
