@@ -17,7 +17,7 @@
 }
 
 .header__description{
-	padding: 5% 28% 1%;
+	/*padding: 5% 28% 1%;*/
 	font-family: proximaBold;
 	background: url(../img/line.svg) no-repeat center;
 	background-size: contain;
@@ -41,7 +41,8 @@
 	align-self: flex-start;
 }
 .header__logo{
- 		display: block;
+ 		/*display: block;*/
+ 		display: flex;
  		margin: 3% 0 1.5%;
  		padding: 0 3%;
  }
@@ -65,11 +66,14 @@
 	/*text-align: right;*/
 	align-self: flex-end;
 	/*width: 66%;*/
-	width: 80%;
+	/*width: 80%;*/
   white-space: pre-wrap;
 }
 .description__line{
 	right: 0;
+}
+.description__line{
+	display: none;
 }
 .header__download{
 	margin-top: 4%;
@@ -344,7 +348,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	flex: 1;
 }
 .footer > *:last-child{
-	flex: 0;
+	flex: 0.2;
 }
 .footer > *{
 		width: 100%;
@@ -408,6 +412,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	width: 60%;
 	/*margin: 0 auto;*/
 }
+
 @media screen and (orientation: portrait) and (max-width: 48em){
 	.header{
 		height: 100vh;
@@ -418,6 +423,12 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	}
 	.header > *{
 		flex: 1;
+	}
+	.header__logo{
+		width: 100%;
+	}
+	.header__download{
+		width: 70%;
 	}
 	.header__description{
 	/*padding: 5% 3% 1%;*/
@@ -455,6 +466,9 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 		width: 100%;
 		margin: 3% 0;
 	}
+	.logo__link{
+		margin: 12% 0;
+	}
 	.footer > *:nth-child(3){
 		margin: 20% 0;
 	}
@@ -468,25 +482,38 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
     align-items: center;
 	}
 }
-
+@media screen and (orientation: portrait) and (max-width: 36em){
+	.header__download{
+		width: 100%;
+	}
+}
 
 @media screen and (min-width: 48em){
-	.header{
+	/*.header{
 		height: auto;
+	}*/
+	.header, .footer{
+		height: 100vh;
 	}
 	.header__logo{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex: 0.2;
+		width: 100%;
 	}
 	.header__logo > *{
-	flex: 1;
+		flex: 1;
+		align-self: center;
 	}
 	.header__nav{
 		display: none;
 	}
 	.header__nav_desktop{
+		width: 100%;
 		display: flex;
+		flex-wrap: nowrap;
+		margin: 0;
 	}
 	.logo__pic{
 		width: 50%;
@@ -501,8 +528,8 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	}
 	.download__apple, .download__google-play{
 		justify-content: space-around;
-		width: 30%;
-		margin: 5% 10%;
+		width: 50%;
+		/*margin: 5% 10%;*/
 	}
 	.header__description > *:not(.description__line){
 		font-size: 3em;
@@ -665,12 +692,74 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	.footer__social {
 		padding: 1.5% 0;
 	}
-	.description__line{
-		display: none;
-	}
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 55em) {
+	.header__logo{
+		flex: 1;
+	}
+
+
+/*	.header{
+		height: 100vh;
+	}
+	.logo__pic {
+    width: 40%;
+  }
+  .logo__description{
+  	font-size: 1em;
+  }
+  .header__description{
+  	padding: 5% 6% 0 20%;
+  	background-image: none;
+  	position: relative;
+  }
+  .description__tagline{
+  	font-size: 4.2em!important;
+  }
+  .description__tagline_add{
+  	width: auto;
+  }
+  .header__nav_desktop{
+  	align-self: flex-end;
+  	justify-content: flex-end;
+  	margin-top: 0;
+  	padding-right: 10%;
+  }
+  .nav__item{
+  	margin: 0 2%;
+  	flex: 0;
+  	white-space: nowrap;
+  }
+  .description__tagline{
+    z-index: 20;
+    position: relative;
+  }
+  .description__tagline_add{
+  	z-index: 5;
+  }
+  .description__line{
+  	position: absolute;
+  	display: block;
+  	margin: 0 auto;
+  	top: 12%;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	z-index: 10;
+  }
+  .about__img_pic{
+  	width: 30%;
+  }
+  .player__img_pic{
+  	width: 50%;
+  }*/
+}
+
+@media only screen and (min-width: 75em){
+	.header{
+		height: 100vh;
+	}
 	.logo__pic {
     width: 40%;
   }
@@ -696,7 +785,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
   	padding-right: 10%;
   }
   .nav__item{
-  	margin: 0 2.5%;
+  	margin: 0 2%;
   	flex: 0;
   	white-space: nowrap;
   }
@@ -717,14 +806,19 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
   	bottom: 0;
   	z-index: 10;
   }
-}
+  .about__img_pic{
+  	width: 30%;
+  }
+  .player__img_pic{
+  	width: 50%;
+  }
 
-@media only screen and (min-width: 75em){
 	.header__description{
   	padding: 5% 15% 0 20%;
   }
   .description__line{
-  	top: 25%;
+  	top: 18%;
+  	/*display: none;*/
   }
 }
 
