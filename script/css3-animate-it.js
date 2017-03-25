@@ -54,6 +54,7 @@
     var left = offset.left;
     var top = offset.top;
 
+    // console.log(window_top, $window.height())
     if (top + $element.height() >= window_top &&
         top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
         left + $element.width() >= window_left &&

@@ -59,6 +59,9 @@
 .logo__pic{
 	/*width: 70%;*/ 
 }
+.footer__social_logo, .footer__feedback{
+	display: none;
+}
 .logo__description{
 	text-transform: uppercase;
 	color: white;
@@ -352,7 +355,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	flex: 1;
 }
 .footer > *:last-child{
-	flex: 0.25;
+	flex: 0.2;
 }
 .footer > *{
 		width: 100%;
@@ -414,6 +417,13 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 .footer__social > *{
 	flex: 1;
+}
+.social__links{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	/*align-self: flex-end; */
+	align-content: flex-end;
 }
 .social__link{
 	color: white;
@@ -502,7 +512,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	}
 
 }
-@media screen and (orientation: portrait) and (max-width: 36em){
+@media screen and (orientation: portrait) and (max-width: 40em){
 	.header__download{
 		width: 100%;
 	}
@@ -559,8 +569,10 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 		/*width: 40%;*/
 	}
 	.download__apple, .download__google-play{
-		justify-content: space-around;
+		/*justify-content: space-around;*/
+		justify-content: center;
 		width: 50%;
+		text-align: left;
 		/*margin: 5% 10%;*/
 		margin: 0;
 		/*width: 25%;*/
@@ -738,6 +750,7 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	}
 	.footer__social {
 		padding: 1.5% 0;
+		flex: .25;
 	}
 }
 
@@ -759,6 +772,9 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 	.header{
 		flex-direction: column;
 	}
+	.footer__social{
+		padding: 1.5% 0 0.2%;
+	}
 }
 /*@media screen and (min-width: 62em){
 	.header{
@@ -769,6 +785,9 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
 @media only screen and (min-width: 75em){
 	.header{
 		height: 100vh;
+	}
+	.header, .footer{
+		background: #0a0e34;
 	}
 	.logo__pic {
     width: 40%;
@@ -881,8 +900,34 @@ box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.75);
   .logo__link{
   	width: 5%;
   }
+  .footer > *:last-child{
+  	margin: 5% 0 2%;
+  }
   .footer__social{
   	flex: .2;
+  	justify-content: space-between;
+  	background: transparent;
+  	padding: 0 3%;
+  }
+  .footer__social_logo{
+  	display: flex;
+  }
+  .footer__social_logo .logo__pic{
+  	width: 50%;
+  }
+  .footer__feedback{
+  	display: flex;
+  	justify-content: flex-end;
+  	align-items: stretch;
+  }
+  .feedback__contact{
+  	color: white;
+  	font-size: 1.2em;
+  }
+  .contact__us, .contact__terms{
+  	text-decoration: none;
+  	text-transform: capitalize;
+  	color: white;
   }
 }
 
