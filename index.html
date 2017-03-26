@@ -16,6 +16,7 @@
 	<script type="text/javascript" src="script/css3-animate-it.js" defer></script>
 	<script src="script/script.js" defer></script>
 	<script src="script/resize.js" defer></script>
+	<script src="script/parallax.js" defer></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -26,9 +27,9 @@
 			</div>
 			<span class="logo__description">for athlets and coaches</span>
 		</div>
-		<div class="header__description col-xs-12 col-sm-12 col-md-12">
-			<h1 class="description__tagline">BE RECRUITED</h1>
-			<h1 class="description__tagline description__tagline_add">PLAY COLLEGE SPORTS</h1>
+		<div class="header__description col-xs-12 col-sm-12 col-md-12 animatedParent animateOnce">
+			<h1 class="description__tagline animated bounceInLeft">BE RECRUITED</h1>
+			<h1 class="description__tagline description__tagline_add animated bounceInRight">PLAY COLLEGE SPORTS</h1>
 			<img src="img/line.svg" class="description__line">
 		</div>
 		<div class="header__nav header__nav_desktop col-xs-12 col-sm-12 col-md-12">
@@ -58,7 +59,7 @@
 		<div class="athlets__slider col-xs-12 col-sm-12 col-md-12">
 		<div class="about__img animatedParent animateOnce" data-appear-top-offset='420'>
 					<object data="img/athlets.svg" type="image/svg+xml" class="about__img_pic animated bounceInLeft slower">Your brouser doesn't support SVGs</object>
-					<div class="about__img_line"></div>
+					<!-- <div class="about__img_line"></div> -->
 					<object data="img/line.svg" type="image/svg+xml" class="about__img_line"></object>
 					<object data="img/plus.svg" type="image/svg+xml" class="about__img_plus"></object>
 					<div class="about__img_background"></div>
@@ -183,7 +184,8 @@
 		</div>
 		<div class="footer__social col-xs-12 center-xs col-sm-12 center-sm col-md-12 center-md">
 			<div class="logo__link_main footer__social_logo">
-				<a href="#" class="logo__link_header"><img src="img/logo.svg" alt="" class="logo__pic"></a>
+				<a href="#" class="logo__link_header"><img src="img/logo.svg" alt="" class="logo__pic"></object>
+				</a>
 			</div>
 			<div class="social__links">
 				<a href="#" class="social__link"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
